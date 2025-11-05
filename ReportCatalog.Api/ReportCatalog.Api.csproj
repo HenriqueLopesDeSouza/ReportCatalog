@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>49e1c5a7-558b-46c4-a384-3ef16e89a3c9</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReportCatalog.Application\ReportCatalog.Application.csproj" />
+    <ProjectReference Include="..\ReportCatalog.Domain\ReportCatalog.Domain.csproj" />
+    <ProjectReference Include="..\ReportCatalog.Formats.Json\ReportCatalog.Formats.Json.csproj" />
+    <ProjectReference Include="..\ReportCatalog.Formats.Pdf\ReportCatalog.Formats.Pdf.csproj" />
+    <ProjectReference Include="..\ReportCatalog.Formats.Xlsx\ReportCatalog.Formats.Xlsx.csproj" />
+  </ItemGroup>
+
+</Project>
